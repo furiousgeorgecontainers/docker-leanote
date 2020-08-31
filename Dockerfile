@@ -7,7 +7,7 @@ LABEL version="${VERSION}"
 
 ENV GOPATH /app
 RUN apk --update add curl && \
-    curl -L http://sourceforge.net/projects/leanote-bin/files/1.4.2/leanote-linux-amd64-v1.4.2.bin.tar.gz/download >> \
+    curl -L https://sourceforge.net/projects/leanote-bin/files/2.6.1/leanote-linux-amd64-v2.6.1.bin.tar.gz/download >> \
     /tmp/leanote.tar.gz && \
     apk del --purge curl && \
     rm -rf /var/cache/apk/*
